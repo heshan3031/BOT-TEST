@@ -24,10 +24,10 @@
     cd $HOME/BOT
     screen -dmS bot_teste ./botssh $token $btn1 $btn2 $linkbtn2 $btn3 $linkbtn3 $tempo $msg $msgfinal > /dev/null 2>&1
     [[ $(grep -wc "bot_teste" /etc/autostart) = '0' ]] && {
-                echo -e "ps x | grep 'bot_teste' | grep -v 'grep' || cd /root/BOT && sudo screen -dmS bot_teste ./botssh $token $btn1 $btn2 $linkbtn2 $btn3 $linkbtn3 $tempo $msg $msgfinal && cd $HOME" >>/etc/autostart
+                echo -e "ps x | grep 'bot_teste' | grep -v 'grep' || cd $HOME/BOT && sudo screen -dmS bot_teste ./botssh $token $btn1 $btn2 $linkbtn2 $btn3 $linkbtn3 $tempo $msg $msgfinal && cd $HOME" >>/etc/autostart
             } || {
                 sed -i '/bot_teste/d' /etc/autostart
-                echo -e "ps x | grep 'bot_teste' | grep -v 'grep' || cd /root/BOT && sudo screen -dmS bot_teste ./botssh $token $btn1 $btn2 $linkbtn2 $btn3 $linkbtn3 $tempo $msg $msgfinal && cd $HOME" >>/etc/autostart
+                echo -e "ps x | grep 'bot_teste' | grep -v 'grep' || cd $HOME/BOT && sudo screen -dmS bot_teste ./botssh $token $btn1 $btn2 $linkbtn2 $btn3 $linkbtn3 $tempo $msg $msgfinal && cd $HOME" >>/etc/autostart
             }    
     clear && echo "BOT ATIVADO"
 } || {
