@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-#--------[ DESENVOLVIDO POR @CRAZY_VPN ]-----------#
 source ShellBot.sh
 touch lista
 [[ ! -e RESET ]] && touch RESET
