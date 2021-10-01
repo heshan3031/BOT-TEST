@@ -3,12 +3,6 @@ clear
 #--------[ DESENVOLVIDO POR @CRAZY_VPN ]-----------#
 source ShellBot.sh
 touch lista
-# Informações Server 2
-ip_server2="SEU-IP-AQUI"
-senha_server2="SUA-SENHA-AQUI"
-# Informações Server 3
-ip_server3="SEU-IP-AQUI"
-senha_server3="SUA-SENHA-AQUI"
 [[ ! -e RESET ]] && touch RESET
 api_bot=$1
 nome_btn1="CRIAR TESTE"
