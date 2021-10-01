@@ -71,7 +71,7 @@ infouser () {
 #informacoes usuario
 pix () {
 	 ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-	--text "$(echo -e "<b>Conta SSH R$ 10/Mês \n\nCOPIE A CHAVE PIX ALEATÓRIA</b> :\n <code>b54bc1c3-c892-4b3a-a7ac-73a46f9eefa3</code>")" \
+	--text "$(echo -e "<b>Conta SSH R$ 10/Mês \n\nCOPIE A CHAVE PIX ALEATÓRIA</b>\n <code>b54bc1c3-c892-4b3a-a7ac-73a46f9eefa3</code>")" \
 	--parse_mode html
 	return 0
 }
