@@ -50,14 +50,12 @@ rm /etc/VPSManager/senha/$usuario > /dev/null 2>&1
 rm -rf /etc/VPSManager/userteste/$usuario.sh" > /etc/VPSManager/userteste/$usuario.sh
     chmod +x /etc/VPSManager/userteste/$usuario.sh
     at -f /etc/VPSManager/userteste/$usuario.sh now + $tempo hour > /dev/null 2>&1
-    
     # - ENVIA O SSH
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
     --text "$(echo -e "✅ <b>Criado com sucesso</b> ✅\n\nUSUARIO: <code>$usuario</code>\nSENHA: <code>$senha</code>\nACESSO: 01\n\n⏳ Expira em: $DATA ")" \
     --parse_mode html
     return 0
 }
-
 
 #informacoes usuario
 infouser () {
@@ -67,12 +65,10 @@ infouser () {
 	return 0
 }
 
-
 unset botao1
 botao1=''
 ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text 'CRIAR CONTA SSH' --callback_data 'gerarssh'
 ShellBot.regHandleFunction --function criarteste --callback_data gerarssh
-
 
 unset keyboard1
 keyboard1="$(ShellBot.InlineKeyboardMarkup -b 'botao1')"
