@@ -16,7 +16,7 @@ ShellBot.username
 menu() {
     local msg
         msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        msg+="<b>•♦• OLA SEJA BEM VINDO •♦•</b>\n"
+        msg+="<b>•🔹• OLA SEJA BEM VINDO •🔹•</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         msg+="Conta SSH R$ 10/Mês"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
@@ -79,10 +79,10 @@ pix () {
 unset botao1
 botao1=''
 ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text 'CRIAR TESTE' --callback_data 'gerarssh'
-ShellBot.InlineKeyboardButton --button 'botao1' --line 2 --text 'BAIXAR APP NT Pro' --callback_data '2' --url 'https://play.google.com/store/apps/details?id=com.ntinjector.pro' # LINK TELEGRAM
+ShellBot.InlineKeyboardButton --button 'botao1' --line 2 --text 'BAIXAR APP NT Pro' --callback_data '2' --url 'https://play.google.com/store/apps/details?id=com.ntinjector.pro' # LINK APP
 ShellBot.InlineKeyboardButton --button 'botao1' --line 3 --text 'CONTATO TELEGRAM' --callback_data '3' --url 'https://t.me/NT_Injector_Pro' # LINK TELEGRAM
 ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text 'PIX' --callback_data 'pay'
-ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text 'PICPAY' --callback_data '4' --url 'https://picpay.me/IxFabricioxI/10.0' # LINK TELEGRAM
+ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text 'PICPAY' --callback_data '4' --url 'https://picpay.me/ntpro/10.0' # LINK PICPAY
 ShellBot.regHandleFunction --function criarteste --callback_data gerarssh
 ShellBot.regHandleFunction --function pix --callback_data pay
 
