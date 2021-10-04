@@ -32,7 +32,7 @@ menu() {
 # - funcao criar ssh
 criarteste() {
   
-   usuario=$(echo BR$(( RANDOM% + 9999)))
+   usuario=$(echo BR$(( RANDOM% + 99999999)))
    senha=$((RANDOM% + 99999))
 
     limite='1'
