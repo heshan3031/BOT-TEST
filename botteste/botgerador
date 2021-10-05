@@ -6,6 +6,7 @@ id_admin=$2
 ShellBot.init --token "$api_bot" --monitor --flush
 ShellBot.username
 
+
 # - Funcao menu
 menu() {
 
