@@ -12,7 +12,7 @@ ShellBot.username
 menu() {
     local msg
         msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
-        msg+="<b>•🔹• OLA SEJA BEM VINDO •🔹•</b>\n"
+        msg+="<b>•🔹• OLJa HOAAA BEM VINDO •🔹•</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         msg+="Conta SSH R$ 10/Mês"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
